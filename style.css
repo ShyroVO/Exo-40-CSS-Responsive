@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    background: darkslategrey;
+}
+
+.Div1, .Div2, .Div3{
+    display: inline-block;
+}
+
+.Div1 {
+    width: 40%;
+}
+
+.Div2, .Div3 {
+    width: 20%;
+}
+
+.Div1 {
+    background: orange;
+    border: dashed blue 0.3rem;
+}
+
+.Div2 {
+    background: darkred;
+    border: solid darkgreen 0.3rem;
+}
+
+.Div3 {
+    background: coral;
+    border: dotted dodgerblue 0.3rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        margin: 0;
+        width: 100%;
+    }
+
+    .Div1, .Div2, .Div3 {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        margin: 0;
+        width: 100%;
+    }
+
+    .Div1, .Div2 {
+        display: block;
+        width: 100%;
+    }
+
+    a, .Div3 {
+        visibility: hidden;
+    }
+
+}
